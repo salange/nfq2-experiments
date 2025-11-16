@@ -1,0 +1,5 @@
+matplotlib~=3.3.4
+numpy~=1.22.0
+psipy @ git+https://github.com/psiori/psipy-public@main
+
+# Later: psipy @ git+https://github.com/psiori/psipy-public@releases/tag/v0.1.0
