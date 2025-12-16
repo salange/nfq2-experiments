@@ -10,9 +10,8 @@ from tensorflow import keras
 from tensorflow.keras import layers as tfkl
 from typing import Callable, Optional
 from matplotlib import pyplot as plt
-from numpy import cast
 from pprint import pprint
-from getopt import getopt
+import getopt
 from datetime import datetime
 
 
@@ -482,7 +481,7 @@ if __name__ == "__main__":
     experiment_type = None
 
     try:
-        opts, args = getopt(sys.argv[1:], "hfpe:l:r:t:xn:",
+        opts, args = getopt.getopt(sys.argv[1:], "hfpe:l:r:t:xn:",
                             ["help", "play-only", "initial-fit", "experiment-folder=", "load-model=", "refit=", "plant-type=", "load-setup-model=", "num-episodes=", "extended-action-space", "nfqs", "sway-killer", "experiment-type="])
     except getopt.GetoptError as err:
         print("Usage: python nfq_hardware_swingup.py [--play <model.zip>]")

@@ -196,7 +196,7 @@ def setup_pact_cartpole(environment: Environment,
         environment.lookback = 6
 
     environment.plant = SwingupPlant(
-        hostname="192.168.2.170",
+        hostname="127.0.0.1",
         hilscher_port="5555",
         sway_start=False,
         cost_function=SwingupPlant.cost_func_wrapper(
